@@ -1,0 +1,113 @@
+.main{
+
+  position: relative;
+  width: 20.625rem;
+  height: 33.5rem;
+
+  background-color: $white;
+  border-radius: 1.25rem;
+  @include breakpoint-up(desktop){
+
+    width: 57.5rem;
+    height: 31.875rem;
+  }
+  
+
+  .illust{
+
+  &__woman{
+    position: absolute;
+    top: -6.75rem;
+    left: 1.5rem;
+    width: 16.625rem;
+    height: 12.25rem;
+
+    background-image: url(/images/illustration-woman-online-mobile.svg);
+    background-size: 99%;
+    background-repeat: no-repeat;
+
+    @include breakpoint-up(desktop){
+      z-index: 2;
+      top: 3rem;
+      left: 0px;
+
+      width: 24.25rem;
+      height: 22.4375rem;
+
+      background-size: cover;
+      background-position: right;
+      background-image: url(/images/illustration-woman-online-desktop.svg);
+
+
+    }
+  }
+
+  &__shadow{
+    position: absolute;
+
+    left: 3.125rem;
+    width: 15rem;
+    height: 6.5rem;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+
+    @include breakpoint-up(desktop){
+      z-index: 1;
+      left: 0px;
+      width: 24.25rem;
+      height: 39.5rem;
+
+      background-position: bottom right;
+      background-image: url(/images/bg-pattern-desktop.svg);
+    }
+  }
+
+  &__box{
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+
+    @include breakpoint-up(desktop){
+      visibility: visible;
+      top: 11.375rem;
+      left: -8rem;
+
+      width: 11.9375rem;
+      height: 11.5rem;
+
+
+      background-image: url(/images/illustration-box-desktop.svg);
+    }
+  }
+}
+
+  .text{
+    position: relative;
+    left: 50%;
+    top:10%;
+    width: 22rem;
+
+    .title{
+      padding-bottom: 2rem;
+      margin-bottom: 0px;
+    }
+
+    ul{
+      padding: 0;
+      list-style: none;
+      color: $Darkgrayishblue;
+
+
+      li{
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $Lightgrayishblue;
+      }
+
+      .arrow{
+        float: right;
+      }
+    }
+  }
+}

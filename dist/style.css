@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+}
+
+.main {
+  position: relative;
+  width: 20.625rem;
+  height: 33.5rem;
+  background-color: white;
+  border-radius: 1.25rem;
+}
+
+@media (min-width: 40rem) {
+  .main {
+    width: 57.5rem;
+    height: 31.875rem;
+  }
+}
+
+.main .illust__woman {
+  position: absolute;
+  top: -6.75rem;
+  left: 1.5rem;
+  width: 16.625rem;
+  height: 12.25rem;
+  background-image: url(/images/illustration-woman-online-mobile.svg);
+  background-size: 99%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 40rem) {
+  .main .illust__woman {
+    z-index: 2;
+    top: 3rem;
+    left: 0px;
+    width: 24.25rem;
+    height: 22.4375rem;
+    background-size: cover;
+    background-position: right;
+    background-image: url(/images/illustration-woman-online-desktop.svg);
+  }
+}
+
+.main .illust__shadow {
+  position: absolute;
+  left: 3.125rem;
+  width: 15rem;
+  height: 6.5rem;
+  background-image: url(/images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 40rem) {
+  .main .illust__shadow {
+    z-index: 1;
+    left: 0px;
+    width: 24.25rem;
+    height: 39.5rem;
+    background-position: bottom right;
+    background-image: url(/images/bg-pattern-desktop.svg);
+  }
+}
+
+.main .illust__box {
+  position: absolute;
+  z-index: 3;
+  visibility: hidden;
+}
+
+@media (min-width: 40rem) {
+  .main .illust__box {
+    visibility: visible;
+    top: 11.375rem;
+    left: -8rem;
+    width: 11.9375rem;
+    height: 11.5rem;
+    background-image: url(/images/illustration-box-desktop.svg);
+  }
+}
+
+.main .text {
+  position: relative;
+  left: 50%;
+  top: 10%;
+  width: 22rem;
+}
+
+.main .text .title {
+  padding-bottom: 2rem;
+  margin-bottom: 0px;
+}
+
+.main .text ul {
+  padding: 0;
+  list-style: none;
+  color: #787887;
+}
+
+.main .text ul li {
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.main .text ul .arrow {
+  float: right;
+}
+/*# sourceMappingURL=style.css.map */
