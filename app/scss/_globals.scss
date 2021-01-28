@@ -1,6 +1,7 @@
 html{
   font-size: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 
 
   height: 100%;
@@ -15,9 +16,20 @@ html{
 }
 
 body{
+  position: relative;
   font-family: 'Kumbh Sans', sans-serif;
   background: linear-gradient($Softviolet, $Softblue);
 
 
 
+
+}
+
+a{
+  text-decoration: none;
+  color: $Verydarkgrayishblue;
+}
+
+a:hover{
+  color: $Softred;
 }

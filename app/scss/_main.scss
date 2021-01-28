@@ -83,30 +83,57 @@
 
   .text{
     position: relative;
+    top: 25%;
+    width: 18rem;
+
+    @include breakpoint-up(desktop){
     left: 50%;
     top:10%;
     width: 22rem;
+    }
 
     .title{
+      position: relative;
+      color: $Verydarkdesaturatedblue;
+      left: 45%;
+
+      @include breakpoint-up(desktop){
       padding-bottom: 2rem;
       margin-bottom: 0px;
+      }
+
     }
 
     ul{
+      position: relative;
       padding: 0;
       list-style: none;
       color: $Darkgrayishblue;
+      left: 5%;
 
+      font-size: 0.875rem;
+      @include breakpoint-up(desktop){
+        font-size: 1rem;
+      }
 
       li{
-        padding-bottom: 1rem;
-        padding-right: 1rem;
-        margin-bottom: 1rem;
         border-bottom: 1px solid $Lightgrayishblue;
+        padding-bottom: 1rem;
+        padding-right: 0.5rem;
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(desktop){
+        padding-right: 1rem;
+      }
+
+
       }
 
       .arrow{
+        margin-top: 0.25rem;
         float: right;
+
+
       }
     }
   }

@@ -3,6 +3,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,9 +22,19 @@ html {
 }
 
 body {
+  position: relative;
   font-family: 'Kumbh Sans', sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(#af67e9, #6565e7);
+}
+
+a {
+  text-decoration: none;
+  color: #4a4b5e;
+}
+
+a:hover {
+  color: #f47c57;
 }
 
 .main {
@@ -104,30 +115,61 @@ body {
 
 .main .text {
   position: relative;
-  left: 50%;
-  top: 10%;
-  width: 22rem;
+  top: 25%;
+  width: 18rem;
+}
+
+@media (min-width: 40rem) {
+  .main .text {
+    left: 50%;
+    top: 10%;
+    width: 22rem;
+  }
 }
 
 .main .text .title {
-  padding-bottom: 2rem;
-  margin-bottom: 0px;
+  position: relative;
+  color: #1d1e35;
+  left: 45%;
+}
+
+@media (min-width: 40rem) {
+  .main .text .title {
+    padding-bottom: 2rem;
+    margin-bottom: 0px;
+  }
 }
 
 .main .text ul {
+  position: relative;
   padding: 0;
   list-style: none;
   color: #787887;
+  left: 5%;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 40rem) {
+  .main .text ul {
+    font-size: 1rem;
+  }
 }
 
 .main .text ul li {
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
   border-bottom: 1px solid #e7e7e9;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .main .text ul li {
+    padding-right: 1rem;
+  }
 }
 
 .main .text ul .arrow {
+  margin-top: 0.25rem;
   float: right;
 }
 /*# sourceMappingURL=style.css.map */
