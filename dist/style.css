@@ -131,6 +131,7 @@ a:hover {
   position: relative;
   color: #1d1e35;
   left: 45%;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 40rem) {
@@ -168,8 +169,38 @@ a:hover {
   }
 }
 
-.main .text ul .arrow {
+.main .text ul li p {
+  line-height: 1.2;
+  font-size: 0.75rem;
+  margin-bottom: 0px;
+}
+
+.main .text .arrow {
   margin-top: 0.25rem;
   float: right;
+}
+
+.main .close {
+  display: none;
+}
+
+.main .open {
+  display: block;
+}
+
+.main .bold {
+  font-weight: 700;
+}
+
+.main .rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.attribution {
+  position: relative;
+  top: 1rem;
+  font-size: 0.75rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
   width: 20.625rem;
   height: 33.5rem;
 
+  
   background-color: $white;
   border-radius: 1.25rem;
   @include breakpoint-up(desktop){
@@ -96,6 +97,7 @@
       position: relative;
       color: $Verydarkdesaturatedblue;
       left: 45%;
+      margin-bottom: 2rem;
 
       @include breakpoint-up(desktop){
       padding-bottom: 2rem;
@@ -122,11 +124,19 @@
         padding-right: 0.5rem;
         margin-bottom: 1rem;
 
+        
         @include breakpoint-up(desktop){
         padding-right: 1rem;
+        
       }
+      
 
-
+      p{
+        line-height: 1.2;
+        font-size: $font-sm;
+        margin-bottom: 0px;
+        }      
+      }
       }
 
       .arrow{
@@ -136,5 +146,20 @@
 
       }
     }
-  }
+
+// For js
+    .close{
+      display: none;
+    }
+    .open{
+      display: block;
+    }
+    .bold{
+      font-weight: 700;
+    }
+    .rotate{
+      transform: rotate(180deg);
+    }
+
+
 }
