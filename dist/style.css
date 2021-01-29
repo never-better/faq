@@ -158,7 +158,7 @@ a:hover {
 
 .main .text ul li {
   border-bottom: 1px solid #e7e7e9;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   padding-right: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -180,19 +180,25 @@ a:hover {
   float: right;
 }
 
-.main .close {
-  display: none;
+.answer {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: height 300ms, opacity 600ms;
+  transition: height 300ms, opacity 600ms;
 }
 
-.main .open {
-  display: block;
+.open {
+  height: 1.75rem;
+  visibility: visible;
+  opacity: 1;
 }
 
-.main .bold {
+.bold {
   font-weight: 700;
 }
 
-.main .rotate {
+.rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }

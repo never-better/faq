@@ -120,7 +120,7 @@
 
       li{
         border-bottom: 1px solid $Lightgrayishblue;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
         padding-right: 0.5rem;
         margin-bottom: 1rem;
 
@@ -132,6 +132,7 @@
       
 
       p{
+
         line-height: 1.2;
         font-size: $font-sm;
         margin-bottom: 0px;
@@ -142,24 +143,27 @@
       .arrow{
         margin-top: 0.25rem;
         float: right;
-
-
       }
     }
 
+}
+
+.answer{
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 300ms, opacity 600ms;
+}
+
 // For js
-    .close{
-      display: none;
-    }
-    .open{
-      display: block;
-    }
-    .bold{
-      font-weight: 700;
-    }
-    .rotate{
-      transform: rotate(180deg);
-    }
-
-
+.open{
+  height: 1.75rem;
+  visibility: visible;
+  opacity: 1;
+}
+.bold{
+  font-weight: 700;
+}
+.rotate{
+  transform: rotate(180deg);
 }
